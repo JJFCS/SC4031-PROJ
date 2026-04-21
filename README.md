@@ -47,7 +47,7 @@ this is an end-2-end IoT license plate recognition system that includes a cloud 
 - OPENSSL (COMES WITH MACOS)
 - IPHONE WITH SAFARI BROWSER
 
-**note this would work on windows too but i develop on a mac-os so this is more catered to that**
+note this would work on windows too but i develop on a mac-os so this is more catered to that
 
 
 ## 🛠️ Setup
@@ -75,7 +75,8 @@ pip install flask flask-cors opencv-python numpy easyocr pillow requests torch t
 ```
 
 ```bash
-# alternatively we have generated a requirements.txt file so you can easily install the dependencies required
+# alternatively we have generated a requirements.txt file so you can easily install
+# the dependencies required
 # to then install the dependencies run the following commands:
 pip freeze   > requirements.txt
 pip install -r requirements.txt
@@ -91,15 +92,14 @@ pip install -r requirements.txt
 
 ### STEP 4: GENERATE SSL CERTIFICATE (FOR HTTPS)
 
-- since safari on iphone blocks camera access over http we make use of https instead
-
 ```bash
+# since safari on iphone blocks camera access over http we make use of https instead
 openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
 ```
 
-- when prompted please enter (you can copy my inputs)
-
 ```text
+# when prompted please enter (you can copy my inputs)
+
 Country Name (2 letter code) [AU]: US
 Common Name [YOUR LAPTOP'S IP ADDRESS]
 Locality Name (eg, city) []: San Francisco
