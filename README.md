@@ -5,7 +5,7 @@ this is an end-2-end IoT license plate recognition system that includes a cloud 
 
 ## 📋 TABLE OF CONTENTS
 
-- [PROJECT OVERVIEW](#project-overview)
+- [PROJECT OVERVIEW](#PROJECT-OVERVIEW)
 - [SYSTEM ARCHITECTURE](#system-architecture)
 - [PREREQUISITES](#prerequisites)
 - [SETUP](#setup)
@@ -95,18 +95,6 @@ pip install -r requirements.txt
 ```bash
 # since safari on iphone blocks camera access over http we make use of https instead
 openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
-```
-
-```text
-# when prompted please enter (you can copy my inputs)
-
-# Country Name (2 letter code) [AU]: US
-# Common Name [YOUR LAPTOP'S IP ADDRESS]
-# Locality Name (eg, city) []: San Francisco
-# State or Province Name (full name) California
-# Organization Name (eg, company) []: IoT Project
-# Organizational Unit Name (eg, section) []: NTU
-# Email Address []: YOUR EMAIL ADDRESS
 ```
 
 **important - the common name MUST be your laptop's IP address on your local network**
