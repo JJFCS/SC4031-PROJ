@@ -1,0 +1,25 @@
+{
+  "dataset": "CCPD (ccpd_base + ccpd_np)",
+  "dataset_source": "https://www.kaggle.com/datasets/binh234/ccpd2019",
+  "positive_source": "ccpd_base (license plates)",
+  "negative_source": "ccpd_np (cars without plates) + synthetic fallback",
+  "positive_examples_used": 5000,
+  "real_negatives_used": 3021,
+  "synthetic_negatives_used": 1979,
+  "split_ratio": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "train_images": 7000,
+  "validation_images": 1500,
+  "test_images": 1500,
+  "epochs": 20,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "loss_function": "Binary Cross Entropy",
+  "validation_accuracy": 0.988,
+  "test_accuracy": 0.9826666666666667,
+  "total_parameters": 655489,
+  "training_date": "2026-04-21T15:29:25.872496"
+}
