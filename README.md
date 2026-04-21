@@ -61,10 +61,9 @@ cd ~/documents/name-of-project
 
 ### STEP 2: CREATE A VIRTUAL ENVIRONMENT
 
-- make sure to do it in the project root directory
-- then activate the virtual environment
-
 ```bash
+# make sure to do it in the project root directory
+# then activate the virtual environment
 python3 -m venv venv
 source venv/bin/activate
 ```
