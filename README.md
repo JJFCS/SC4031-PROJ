@@ -75,8 +75,8 @@ source venv/bin/activate
 pip install flask flask-cors opencv-python numpy easyocr pillow requests torch torchvision
 ```
 
-- alternatively, we have generated a requirements.txt file so you can easily install the dependencies required
-- to then install the dependencies, run the following commands:
+- alternatively we have generated a requirements.txt file so you can easily install the dependencies required
+- to then install the dependencies run the following commands:
 
 ```bash
 pip freeze   > requirements.txt
@@ -84,7 +84,7 @@ pip install -r requirements.txt
 ```
 
 **MAC SSL CERTIFICATE FIX**
-- if easyOCR fails to download its detection model with SSL errors , please run
+- if easyOCR fails to download its detection model with SSL errors please run
 - adjust the python version if different
 
 ```bash
@@ -93,13 +93,13 @@ pip install -r requirements.txt
 
 ### STEP 4: GENERATE SSL CERTIFICATE (FOR HTTPS)
 
-- since safari on iphone blocks camera access over http , we make use of https instead
+- since safari on iphone blocks camera access over http we make use of https instead
 
 ```bash
 openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
 ```
 
-- when prompted , please enter (you can copy my inputs)
+- when prompted please enter (you can copy my inputs)
 
 ```text
 Country Name (2 letter code) [AU]: US
@@ -113,7 +113,7 @@ Email Address []: YOUR EMAIL ADDRESS
 
 **important - the common name MUST be your laptop's IP address on your local network**
 
-**upon completion , this will create two files**
+**upon completion this will create two files**
 - cert.pem - SSL certificate
 - key.pem  - private key
 
@@ -123,7 +123,7 @@ Email Address []: YOUR EMAIL ADDRESS
 
 ### STEP 6: UPDATE FILE PATHS
 
-- in train.py , update the dataset path:
+- in train.py update the dataset path:
 
 ```python
 CCPD_PATH = "/path/to/your/CCPD/ccpd_base"
