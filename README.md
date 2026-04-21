@@ -17,13 +17,13 @@
 
 ## 🎯 PROJECT OVERVIEW
 
-THIS PROJECT IMPLEMENTS A COMPLETE LICENSE PLATE RECOGNITION SYSTEM THAT:
+**THIS PROJECT IMPLEMENTS A COMPLETE LICENSE PLATE RECOGNITION SYSTEM THAT..**
 
-- WE USE AN **IPHONE AS AN IOT DEVICE** TO CAPTURE LICENSE PLATES IN REAL-TIME
-- WE RUN **CLOUD INFERENCE LOCALLY** ON A MAC (ACTS AS THE CLOUD VM)
-- WE SUPPORT **MULTIPLE CONCURRENT USERS** ACCESSING THE SERVICE SIMULTANEOUSLY
-- WE IMPLEMENT **ONLINE MODEL UPDATING** AT RUNTIME USING USER CORRECTIONS
-- WE TRAIN A **CUSTOM CNN MODEL** ON THE CCPD DATASET
+- WE USE AN IPHONE AS AN IOT DEVICE TO CAPTURE LICENSE PLATES IN REAL-TIME
+- WE RUN CLOUD INFERENCE LOCALLY ON A MAC (ACTS AS THE CLOUD VM)
+- WE SUPPORT MULTIPLE CONCURRENT USERS ACCESSING THE SERVICE SIMULTANEOUSLY
+- WE IMPLEMENT ONLINE MODEL UPDATING AT RUNTIME USING USER CORRECTIONS
+- WE TRAIN A CUSTOM CNN MODEL ON THE CCPD DATASET
 
 
 ## 🏗️ SYSTEM ARCHITECTURE
@@ -37,8 +37,8 @@ THIS PROJECT IMPLEMENTS A COMPLETE LICENSE PLATE RECOGNITION SYSTEM THAT:
 ## 💻 PREREQUISITES
 
 ### HARDWARE REQUIREMENTS
-- **MAC**
-- **IPHONE**
+- MAC
+- IPHONE
 - SAME WIFI NETWORK FOR BOTH DEVICES
 
 ### SOFTWARE REQUIREMENTS
@@ -58,15 +58,14 @@ THIS PROJECT IMPLEMENTS A COMPLETE LICENSE PLATE RECOGNITION SYSTEM THAT:
 mkdir ~/documents/name-of-project
 cd ~/documents/name-of-project
 ```
+
 ### STEP 2: CREATE A VIRTUAL ENVIRONMENT
 
-make sure to do it in the project root directory
+- make sure to do it in the project root directory
+- then activate the virtual environment
+
 ```bash
 python3 -m venv venv
-```
-
-then activate the virtual environment
-```bash
 source venv/bin/activate
 ```
 
@@ -76,24 +75,21 @@ source venv/bin/activate
 pip install flask flask-cors opencv-python numpy easyocr pillow requests torch torchvision
 ```
 
-**alternatively, we have generated a requirements.txt file so you can easily install the dependencies required**
+- alternatively, we have generated a requirements.txt file so you can easily install the dependencies required
+- to then install the dependencies, run the following commands:
 
 ```bash
-pip freeze > requirements.txt
-```
-
-**to then install the dependencies, run the following command:**
-
-```bash
+pip freeze   > requirements.txt
 pip install -r requirements.txt
 ```
 
-MAC SSL CERTIFICATE FIX.
-if easyOCR fails to download its detection model with SSL errors , please run
+**MAC SSL CERTIFICATE FIX**
+- if easyOCR fails to download its detection model with SSL errors , please run
+- adjust the python version if different
+
 ```bash
 /Applications/Python\ 3.12/Install\ Certificates.command
 ```
-- adjust the python version if different
 
 ### STEP 4: GENERATE SSL CERTIFICATE (FOR HTTPS)
 
