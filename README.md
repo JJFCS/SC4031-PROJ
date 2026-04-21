@@ -1,6 +1,6 @@
 ## LICENSE PLATE RECOGNITION SYSTEM
 
-**this is an end-2-end IoT license plate recognition system that includes a cloud inference, multiple concurrent user support, and an online model updating**
+this is an end-2-end IoT license plate recognition system that includes a cloud inference, multiple concurrent user support, and an online model updating
 
 
 ## 📋 TABLE OF CONTENTS
@@ -74,10 +74,9 @@ source venv/bin/activate
 pip install flask flask-cors opencv-python numpy easyocr pillow requests torch torchvision
 ```
 
-- alternatively we have generated a requirements.txt file so you can easily install the dependencies required
-- to then install the dependencies run the following commands:
-
 ```bash
+# alternatively we have generated a requirements.txt file so you can easily install the dependencies required
+# to then install the dependencies run the following commands:
 pip freeze   > requirements.txt
 pip install -r requirements.txt
 ```
