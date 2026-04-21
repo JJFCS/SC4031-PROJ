@@ -5,17 +5,17 @@ this is an end-2-end IoT license plate recognition system that includes a cloud 
 
 ## 📋 TABLE OF CONTENTS
 
-- [PROJECT OVERVIEW](#PROJECT-OVERVIEW)
-- [SYSTEM ARCHITECTURE](#SYSTEM-ARCHITECTURE)
-- [PREREQUISITES](#PREREQUISITES)
-- [SETUP](#SETUP)
-- [RUNNING THE SYSTEM](#RUNNING-THE-SYSTEM)
-- [TESTING](#TESTING)
-- [MODEL TRAINING](#MODEL-TRAINING)
-- [FILE STRUCTURE](#FILE-STRUCTURE)
+- [PROJECT OVERVIEW](#project-overview)
+- [SYSTEM ARCHITECTURE](#system-architecture)
+- [PREREQUISITES](#prerequisites)
+- [SETUP](#setup)
+- [RUNNING THE SYSTEM](#running-the-system)
+- [TESTING](#testing)
+- [MODEL TRAINING](#model-training)
+- [FILE STRUCTURE](#file-structure)
 
 
-## 🎯 PROJECT OVERVIEW
+## PROJECT OVERVIEW
 
 **THIS PROJECT IMPLEMENTS A COMPLETE LICENSE PLATE RECOGNITION SYSTEM THAT..**
 
@@ -26,7 +26,7 @@ this is an end-2-end IoT license plate recognition system that includes a cloud 
 - WE TRAIN A CUSTOM CNN MODEL ON THE CCPD DATASET
 
 
-## 🏗️ SYSTEM ARCHITECTURE
+## SYSTEM ARCHITECTURE
 
 | COMPONENT | PORT | PURPOSE |
 |-----------|------|---------|
@@ -34,7 +34,7 @@ this is an end-2-end IoT license plate recognition system that includes a cloud 
 | IPHONE BRIDGE | 5002 | SERVES HTTPS WEBPAGE TO IPHONE |
 
 
-## 💻 PREREQUISITES
+## PREREQUISITES
 
 ### HARDWARE REQUIREMENTS
 - MAC
@@ -50,7 +50,7 @@ this is an end-2-end IoT license plate recognition system that includes a cloud 
 note this would work on windows too but i develop on a mac-os so this is more catered to that
 
 
-## 🛠️ Setup
+## SETUP
 
 ### STEP 1: CREATE PROJECT DIRECTORY
 
@@ -115,7 +115,7 @@ CCPD_PATH = "/path/to/your/CCPD/ccpd_base"
 ```
 
 
-## 🚀 RUNNING THE SYSTEM
+## RUNNING THE SYSTEM
 
 ```bash
 # terminal 1 - recognition server - on port 5001
@@ -162,7 +162,7 @@ https://192.168.1.100:5002
 5. point your camera at a license plate and tap "CAPTURE"
 
 
-## 🧪 TESTING
+## TESTING
 
 ```bash
 # test 1 - multiple concurrent users
@@ -213,7 +213,7 @@ Step 3: Cloud updates model at runtime
 ```
 
 
-## 🤖 MODEL TRAINING
+## MODEL TRAINING
 
 the training script:
 - loads 5000 positive examples from ccpd_base
@@ -263,7 +263,7 @@ the high accuracy (98%) is expected given the dataset composition:
 - negative examples: mix of real no license plate cars and synthetic images
 
 
-## 📁 File Structure
+## FILE STRUCTURE
 
 ```text
 name-of-project/
@@ -284,18 +284,3 @@ name-of-project/
 ├── requirements.txt           # Python dependencies
 └── README.md                  # This file
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
