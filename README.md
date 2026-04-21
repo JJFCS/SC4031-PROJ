@@ -76,17 +76,17 @@ pip install flask flask-cors opencv-python numpy easyocr pillow requests torch t
 
 ```bash
 # alternatively we have generated a requirements.txt file so you can easily install
-# the dependencies required
+# the dependencies required.
 # to then install the dependencies run the following commands:
 pip freeze   > requirements.txt
 pip install -r requirements.txt
 ```
 
 **MAC SSL CERTIFICATE FIX**
-- if easyOCR fails to download its detection model with SSL errors please run
-- adjust the python version if different
 
 ```bash
+# if easyOCR fails to download its detection model with SSL errors please run
+# adjust the python version if different
 /Applications/Python\ 3.12/Install\ Certificates.command
 ```
 
@@ -100,13 +100,13 @@ openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 36
 ```text
 # when prompted please enter (you can copy my inputs)
 
-Country Name (2 letter code) [AU]: US
-Common Name [YOUR LAPTOP'S IP ADDRESS]
-Locality Name (eg, city) []: San Francisco
-State or Province Name (full name) California
-Organization Name (eg, company) []: IoT Project
-Organizational Unit Name (eg, section) []: NTU
-Email Address []: YOUR EMAIL ADDRESS
+# Country Name (2 letter code) [AU]: US
+# Common Name [YOUR LAPTOP'S IP ADDRESS]
+# Locality Name (eg, city) []: San Francisco
+# State or Province Name (full name) California
+# Organization Name (eg, company) []: IoT Project
+# Organizational Unit Name (eg, section) []: NTU
+# Email Address []: YOUR EMAIL ADDRESS
 ```
 
 **important - the common name MUST be your laptop's IP address on your local network**
@@ -121,17 +121,16 @@ Email Address []: YOUR EMAIL ADDRESS
 
 ### STEP 6: UPDATE FILE PATHS
 
-- in train.py update the dataset path:
-
 ```python
+# in train.py update the dataset path:
 CCPD_PATH = "/path/to/your/CCPD/ccpd_base"
 ```
 
 
 ## 🚀 RUNNING THE SYSTEM
 
-terminal 1 - recognition server - on port 5001
 ```bash
+# terminal 1 - recognition server - on port 5001
 cd ~/documents/name-of-project
 source venv/bin/activate
 python recognition-server.py
@@ -149,8 +148,8 @@ Server starting...
  * Running on http://0.0.0.0:5001
 ```
 
-terminal 2 - iphone bridge server - on port 5002
 ```bash
+# terminal 2 - iphone bridge server - on port 5002
 cd ~/documents/name-of-project
 source venv/bin/activate
 python iphone-bridge-https.py
@@ -177,8 +176,8 @@ https://192.168.1.100:5002
 
 ## 🧪 TESTING
 
-test 1 - multiple concurrent users
 ```bash
+# test 1 - multiple concurrent users
 python test-concurrent.py
 ```
 
@@ -199,8 +198,8 @@ ALL REQUESTS SUCCESSFUL. concurrent users test PASSED
 ==================================================
 ```
 
-test 2 - online model updating
 ```bash
+# test 2 - online model updating
 python demo-online-update.py
 ```
 
@@ -236,8 +235,8 @@ the training script:
 - splits the data where we have 70% for training, 15% for validation, and 15% for testing
 - achieves about a 98% test accuracy
 
-**in the project root directory run the following to run the training**
 ```bash
+# in the project root directory run the following to run the training
 python train.py
 ```
 
