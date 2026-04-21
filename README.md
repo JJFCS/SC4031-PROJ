@@ -6,13 +6,13 @@ this is an end-2-end IoT license plate recognition system that includes a cloud 
 ## 📋 TABLE OF CONTENTS
 
 - [PROJECT OVERVIEW](#PROJECT-OVERVIEW)
-- [SYSTEM ARCHITECTURE](#system-architecture)
-- [PREREQUISITES](#prerequisites)
-- [SETUP](#setup)
-- [RUNNING THE SYSTEM](#running-the-system)
-- [TESTING](#testing)
-- [MODEL TRAINING](#model-training)
-- [FILE STRUCTURE](#file-structure)
+- [SYSTEM ARCHITECTURE](#SYSTEM-ARCHITECTURE)
+- [PREREQUISITES](#PREREQUISITES)
+- [SETUP](#SETUP)
+- [RUNNING THE SYSTEM](#RUNNING-THE-SYSTEM)
+- [TESTING](#TESTING)
+- [MODEL TRAINING](#MODEL-TRAINING)
+- [FILE STRUCTURE](#FILE-STRUCTURE)
 
 
 ## 🎯 PROJECT OVERVIEW
