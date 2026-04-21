@@ -93,12 +93,14 @@ pip install -r requirements.txt
 
 ### STEP 4: GENERATE SSL CERTIFICATE (FOR HTTPS)
 
-since safari on iphone blocks camera access over http , we make use of https instead
+- since safari on iphone blocks camera access over http , we make use of https instead
+
 ```bash
 openssl req -x509 -newkey rsa:4096 -nodes -out cert.pem -keyout key.pem -days 365
 ```
 
-when prompted , please enter (you can copy my inputs)
+- when prompted , please enter (you can copy my inputs)
+
 ```text
 Country Name (2 letter code) [AU]: US
 Common Name [YOUR LAPTOP'S IP ADDRESS]
@@ -111,17 +113,18 @@ Email Address []: YOUR EMAIL ADDRESS
 
 **important - the common name MUST be your laptop's IP address on your local network**
 
-upon completion , this will create two files
+**upon completion , this will create two files**
 - cert.pem - SSL certificate
 - key.pem  - private key
 
 ### STEP 5: DOWNLOAD DATASET FOR TRAINING
 
-download the CCPD2019 dataset from Kaggle - https://www.kaggle.com/datasets/binh234/ccpd2019
+- download the CCPD2019 dataset from Kaggle - https://www.kaggle.com/datasets/binh234/ccpd2019
 
 ### STEP 6: UPDATE FILE PATHS
 
-in train.py , update the dataset path:
+- in train.py , update the dataset path:
+
 ```python
 CCPD_PATH = "/path/to/your/CCPD/ccpd_base"
 ```
