@@ -1,6 +1,6 @@
 ## LICENSE PLATE RECOGNITION SYSTEM
 
-this is an end-2-end IoT license plate recognition system that includes a cloud inference, multiple concurrent user support, and an online model updating
+this is an end-2-end IoT license plate recognition system that includes a cloud inference, multiple concurrent user support, and an online model updating. video demo link - https://drive.google.com/file/d/1mLcX5MrnsNEiw7eOEBze9I_5qmp4yzGm/view?usp=sharing
 
 
 ## 📋 TABLE OF CONTENTS
